@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>QuidSolver</title>
+    <script src="main.js" charset="utf-8"></script>
+    <script src="wordbank.js" charset="utf-8"></script>
+    <style media="screen">
+      body
+      {
+        background-color:#3a2a5d;
+        color:#dfbe8d;
+        font-family:cursive;
+      }
+      .myDrop
+      {
+        font-family:cursive;
+      }
+      button
+      {
+        font-family:cursive;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to the Rough Version of the Quiddler™ Solver</h1>
+    <br>
+    <h2>How Many Cards Are There?</h2>
+    <div class="custom-select" style="width:200px;">
+      <select class="myDrop" name="numCards" id="numCards" onclick="clearCards()">
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+      </select>
+    </div>
+    <h2>What Cards Do You Have?</h2>
+    <select class="myDrop" name="cardVal" id="cardVal">
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+      <option value="D">D</option>
+      <option value="E">E</option>
+      <option value="F">F</option>
+      <option value="G">G</option>
+      <option value="H">H</option>
+      <option value="I">I</option>
+      <option value="J">J</option>
+      <option value="K">K</option>
+      <option value="L">L</option>
+      <option value="M">M</option>
+      <option value="N">N</option>
+      <option value="O">O</option>
+      <option value="P">P</option>
+      <option value="Q">Q</option>
+      <option value="R">R</option>
+      <option value="S">S</option>
+      <option value="T">T</option>
+      <option value="U">U</option>
+      <option value="V">V</option>
+      <option value="W">W</option>
+      <option value="X">X</option>
+      <option value="Y">Y</option>
+      <option value="Z">Z</option>
+      <option value="QU">QU</option>
+      <option value="IN">IN</option>
+      <option value="ER">ER</option>
+      <option value="CL">CL</option>
+      <option value="TH">TH</option>
+    </select>
+    <br><br>
+    <button type="button" name="Clear" id="Clear" onclick="clearCards()" value="Clear">Clear</button>
+    <button type="button" name="Add" id="Add" onclick="addCard()" value="Add">Add</button>
+    <button type="button" name="Delete" id="Delete" onclick="deleteCard()" value="Delete">Delete</button>
+    <button type="button" name="Submit" id="Submit" onclick="getWords()" value="Submit">Submit</button>
+    <br>
+    <h2>--Your Input--</h2>
+    <div id="input"></div>
+    <br>
+    <h2>--Your Output--</h2>
+    <div id="output"></div>
+  </body>
+</html>
